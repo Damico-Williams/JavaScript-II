@@ -1,6 +1,15 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+let count = 26
 
+const closure = () => {
+  let firstName = "Brandon"
+  return function () {
+    return `${firstName} is ` + --count;
+   }
+}
+const newClosure = closure();
+console.log(newClosure());
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
